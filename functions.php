@@ -3,7 +3,7 @@
 $args = array(
     'width'         => 1920,
     'height'        => 600,
-    'header-text'            => false,
+    'header-text'   => false,
 );
 add_theme_support( 'custom-header', $args );
 
@@ -16,16 +16,6 @@ add_theme_support( 'html5', array( 'search-form' ) );
 
 register_nav_menus( array(
     'main' => 'Main menu'
-) );
-
-register_sidebar( array(
-    'id' => 'footer-copyright',
-    'name' => __('Copyright in footer', $text_domain),
-    'description' => __('Copyright content in footer'),
-    'before_widget' => '',
-    'after_widget' => '',
-    'before_title' => '',
-    'after_title' => ''
 ) );
 
 function cleanblog_customize_register( $wp_customize ) {
