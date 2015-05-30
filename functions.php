@@ -19,6 +19,18 @@ register_nav_menus( array(
 ) );
 
 function cleanblog_customize_register( $wp_customize ) {
+    $wp_customize->add_section( 'cleanblog_google_analytics' , array(
+        'title'      => __( 'Google Analytics', 'cleanblog' ),
+        'priority'   => 100,
+    ) );
+    $wp_customize->add_setting( 'googleanalytics' , array(
+        'default'     => ''
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'googleanalytics', array(
+        'label'        => __( 'Google Analytics', 'cleanblog' ),
+        'section'    => 'cleanblog_google_analytics',
+        'settings'   => 'googleanalytics',
+    ) ) );
     $wp_customize->add_section( 'cleanblog_social_media' , array(
         'title'      => __( 'Social Media', 'cleanblog' ),
         'priority'   => 100,
