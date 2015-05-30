@@ -6,7 +6,6 @@ Simple WordPress theme based on Clean Blog Bootstrap theme created by Start Boot
 * Featured images for post and page header (if featured image is missing, custom header image is used by default)
 * Google Analytics integration
 * Social media links
-* 
 
 ## Requirements
 * This theme requires WP Subtitle plugin: https://wordpress.org/plugins/wp-subtitle/
