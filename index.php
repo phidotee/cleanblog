@@ -12,7 +12,7 @@
                             <?php the_title(); ?>
                         </h2>
                         <h3 class="post-subtitle">
-                            <?php the_excerpt(); ?>
+                            <?php the_subtitle(); ?>
                         </h3>
                     </a>
                     <p class="post-meta"><?php _e( 'Posted by ', 'cleanblog' ); ?><?php the_author_link(); ?><?php _e( ' on ', 'cleanblog' ); ?><?php echo get_the_date(); ?></p>
